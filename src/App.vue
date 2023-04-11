@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <PageHeader />
+  <PageHeader :links="navLinks" />
   <PageMain />
   <PageFooter />
 </template>

@@ -6,6 +6,9 @@ export default {
   components: {
     TheJumbotron,
   },
+  props: {
+    links: Array,
+  },
 };
 </script>
 
@@ -21,11 +24,11 @@ export default {
               alt="logo Phlox"
             />
           </div>
-          <nav class="main_nav">
-            <ul class="d-flex gap-2 mb-0">
-              <li>link</li>
-              <li>link</li>
-              <li>link</li>
+          <nav class="main_nav h-100">
+            <ul class="d-flex gap-4 mb-0 h-100">
+              <li v-for="link in links" class="h-100">
+                <a href="#">{{ link }}</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -60,7 +63,34 @@ header {
       font-size: 0.75rem;
 
       li {
-        color: $text_dirty_white;
+        position: relative;
+        line-height: 4.5rem;
+
+        a {
+          color: $text_transparent_white;
+
+          &:hover {
+            color: $text_white;
+            font-weight: 600;
+          }
+        }
+
+        &:first-child {
+          a {
+            color: $text_white;
+            font-weight: 600;
+          }
+
+          a:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $bg_white;
+          }
+        }
       }
     }
   }
