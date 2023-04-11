@@ -1,4 +1,5 @@
 <script>
+import "@fontsource/lato";
 import PageHeader from "./components/PageHeader.vue";
 import PageMain from "./components/PageMain.vue";
 import PageFooter from "./components/PageFooter.vue";
@@ -13,9 +14,9 @@ export default {
 </script>
 
 <template>
-  <TheHeader />
-  <TheMain />
-  <TheFooter />
+  <PageHeader />
+  <PageMain />
+  <PageFooter />
 </template>
 
 <style lang="scss">

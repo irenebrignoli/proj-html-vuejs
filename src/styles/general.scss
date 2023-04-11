@@ -1,1 +1,17 @@
 @use "bootstrap";
+@use "../styles/partials/variables.scss" as *;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.main_nav {
+  ul {
+    list-style: none;
+    text-transform: uppercase;
+  }
+}
+
+.blue_col {
+  background-color: $bg_darkblue;
+}
