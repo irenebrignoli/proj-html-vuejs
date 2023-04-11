@@ -52,6 +52,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 99;
 
     .header_logo {
       img {
