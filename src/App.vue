@@ -1,6 +1,22 @@
-<script></script>
+<script>
+import PageHeader from "./components/PageHeader.vue";
+import PageMain from "./components/PageMain.vue";
+import PageFooter from "./components/PageFooter.vue";
 
-<template></template>
+export default {
+  components: {
+    PageHeader,
+    PageMain,
+    PageFooter,
+  },
+};
+</script>
+
+<template>
+  <TheHeader />
+  <TheMain />
+  <TheFooter />
+</template>
 
 <style lang="scss">
 @use "./styles/general.scss";
