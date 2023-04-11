@@ -1,4 +1,8 @@
-<script></script>
+<script>
+export default {
+  name: "TheJumbotron",
+};
+</script>
 
 <template>
   <div class="jumbotron h-100">

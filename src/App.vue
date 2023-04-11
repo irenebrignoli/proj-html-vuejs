@@ -10,6 +10,11 @@ export default {
     PageMain,
     PageFooter,
   },
+  data() {
+    return {
+      navLinks: ["Home", "About", "Projects", "Services", "Blog", "Contact"],
+    };
+  },
 };
 </script>
 
