@@ -44,12 +44,11 @@ export default {
 header {
   position: relative;
   .header_top {
-    height: 5rem;
+    height: 4.5rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.616);
 
     .header_logo {
       img {
@@ -67,7 +66,7 @@ header {
   }
 
   .header_bottom {
-    height: 60rem;
+    height: 50rem;
     background-color: red;
   }
 }
