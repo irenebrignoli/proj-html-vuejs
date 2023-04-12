@@ -6,12 +6,28 @@ export default {
   components: {
     ConsultantsCard,
   },
-  consultantsIcons: [
-    "fa-chart-line",
-    "fa-bullhorn",
-    "fa-piggy-bank",
-    "fa-bullseye",
-  ],
+  data() {
+    return {
+      consultants: [
+        {
+          title: "Statistical consulting",
+          icon: "fa-chart-line",
+        },
+        {
+          title: "Digital consulting",
+          icon: "fa-bullhorn",
+        },
+        {
+          title: "Banking consulting",
+          icon: "fa-piggy-bank",
+        },
+        {
+          title: "Enterprise consulting",
+          icon: "fa-bullseye",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -21,11 +37,10 @@ export default {
     <div class="row justify-content-center">
       <div class="col-8">
         <h5>Our consultants con help you</h5>
-        <div class="row justify-content-between">
-          <div class="col-5">
-            <ConsultantsCard />
+        <div class="row flex-wrap justify-content-between gy-5">
+          <div v-for="(consultant, i) in consultants" :key="i" class="col-5">
+            <ConsultantsCard :consultant="consultant" />
           </div>
-          <div class="col-5"></div>
         </div>
       </div>
     </div>
@@ -36,8 +51,7 @@ export default {
 @use "../styles/partials/variables" as *;
 
 #consultants {
-  height: 50rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
   color: $text_dark_gray;
 
   h5 {
@@ -45,6 +59,14 @@ export default {
     font-weight: 700;
     margin-bottom: 4.5rem;
     font-size: 1.4rem;
+
+    &:after {
+      content: "";
+      background-color: $bg_darker_green;
+      height: 2.5px;
+      width: 100%;
+      position: absolute;
+    }
   }
 }
 </style>

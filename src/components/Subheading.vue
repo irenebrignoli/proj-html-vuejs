@@ -18,8 +18,6 @@ export default {
 @use "../../src/styles/partials/variables" as *;
 
 .line_azur {
-  background-color: $bg_darker_green;
-  height: 2.5px;
   width: 40px;
 }
 .subheading {

@@ -1,16 +1,19 @@
 <script>
 export default {
   name: "PageFooter",
+  props: {
+    consultant: Object,
+  },
 };
 </script>
 
 <template>
   <div class="d-flex gap-5">
     <div class="ms_icon flex-shrink-0">
-      <i class="fa-solid fa-chart-line"></i>
+      <i :class="`fa-solid ${consultant.icon}`"></i>
     </div>
     <div>
-      <h6 class="mb-3">Statistical cons</h6>
+      <h6 class="mb-3">{{ consultant.title }}</h6>
       <p class="text_section">
         When, while lovely valley teems with vapour around meand eridian sun
         strikes the upper impenetrable foliage of my trees, and but a
@@ -32,7 +35,7 @@ export default {
   i {
     color: $text-white;
     line-height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
