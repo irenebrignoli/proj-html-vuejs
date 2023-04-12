@@ -2,6 +2,7 @@
 import ConsultantsCard from "../components/ConsultantsCard.vue";
 import Subheading from "./Subheading.vue";
 import CtaGreen from "./CtaGreen.vue";
+import ProjectCard from "./PorjectCard.vue";
 
 export default {
   name: "PageMain",
@@ -9,6 +10,7 @@ export default {
     ConsultantsCard,
     Subheading,
     CtaGreen,
+    ProjectCard,
   },
   data() {
     return {
@@ -28,6 +30,23 @@ export default {
         {
           title: "Enterprise consulting",
           icon: "fa-bullseye",
+        },
+      ],
+      projects: [
+        {
+          image: "p1",
+          title: "Dry products",
+          hover: false,
+        },
+        {
+          image: "p2",
+          title: "Sponsorship",
+          hover: false,
+        },
+        {
+          image: "p3",
+          title: "Vizeon",
+          hover: false,
         },
       ],
     };
@@ -50,7 +69,7 @@ export default {
     </div>
   </section>
 
-  <!-- background blue -->
+  <!-- BACKGROUND BLUE -->
   <div class="blue_area">
     <!-- about us section -->
     <section id="about_us">
@@ -75,6 +94,31 @@ export default {
 
     <!-- Cta green-->
     <CtaGreen />
+
+    <!-- project section-->
+    <section id="project">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <Subheading subtitle="Project" />
+            <h3 class="main_title_repeat">
+              Our expert trusted consultants<br />help clients
+            </h3>
+          </div>
+
+          <div class="arrows d-flex gap-2">
+            <div class="arrow"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div v-for="(project, i) in projects" :key="i" class="col">
+            <ProjectCard :project="project" />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -122,6 +166,23 @@ export default {
 
       .text_section {
         color: $text_gray;
+      }
+    }
+  }
+
+  #project {
+    margin-top: 10rem;
+
+    .arrow {
+      width: 3rem;
+      height: 3rem;
+      background-color: $bg_arrows;
+      text-align: center;
+
+      i {
+        color: $text_dirty_white;
+        font-size: 0.8rem;
+        line-height: 3rem;
       }
     }
   }

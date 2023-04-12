@@ -16,9 +16,16 @@ body {
   }
 }
 
-.main_title {
+.main_title,
+.main_title_repeat {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.main_title_repeat {
+  font-size: 2rem;
+  color: $text_white;
+  margin-top: 1.8rem;
 }
 
 .blue_col {

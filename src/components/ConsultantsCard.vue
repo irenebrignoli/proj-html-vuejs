@@ -29,7 +29,7 @@ export default {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: $bg_darker_red;
+  background-color: $bg_lighter_red;
   text-align: center;
 
   i {
