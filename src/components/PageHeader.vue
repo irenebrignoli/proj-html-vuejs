@@ -99,7 +99,7 @@ header {
   }
 
   .header_bottom {
-    height: 45rem;
+    height: 48rem;
     background-color: red;
   }
 }
