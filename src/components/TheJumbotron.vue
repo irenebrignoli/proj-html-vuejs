@@ -22,7 +22,7 @@ export default {
         <div class="container">
           <div class="text_box">
             <Subheading subtitle="Always the best way you need it" />
-            <h1 class="display-2 mt-4">
+            <h1 class="main_title display-2 mt-4">
               The best<br />business<br />consulting
             </h1>
             <div class="d-flex gap-4 align-items-center mt-4">
@@ -46,10 +46,8 @@ export default {
   .text_jumbotron {
     position: absolute;
     top: 16rem;
-    h1 {
+    .main_title {
       color: $text_white;
-      text-transform: uppercase;
-      font-weight: 700;
       line-height: 1;
     }
 

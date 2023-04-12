@@ -13,7 +13,7 @@ export default {
       <i :class="`fa-solid ${consultant.icon}`"></i>
     </div>
     <div>
-      <h6 class="mb-3">{{ consultant.title }}</h6>
+      <h6 class="main_title mb-3">{{ consultant.title }}</h6>
       <p class="text_section">
         When, while lovely valley teems with vapour around meand eridian sun
         strikes the upper impenetrable foliage of my trees, and but a
@@ -39,9 +39,7 @@ export default {
   }
 }
 
-h6 {
-  text-transform: uppercase;
-  font-weight: 700;
+.main_title {
   font-size: 1.1rem;
 }
 </style>
