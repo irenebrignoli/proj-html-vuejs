@@ -16,20 +16,30 @@ export default {
         unknown
       </p>
     </div>
+    <button class="ms_btn ms_btn_red">Get started</button>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/buttons" as *;
 
 .cta_green {
   background-color: $bg_lighter_green;
   height: 16rem;
   width: 90%;
+  color: $text_dark_violet;
+  position: relative;
 
   .text_section {
-    width: 20rem;
+    width: 22rem;
     margin-left: 10rem;
+  }
+
+  .ms_btn {
+    bottom: 0;
+    right: 0;
+    position: absolute;
   }
 }
 </style>

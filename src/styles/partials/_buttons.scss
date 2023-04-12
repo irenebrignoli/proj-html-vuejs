@@ -6,15 +6,24 @@
   font-size: 0.8rem;
   letter-spacing: 1.8px;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .ms_btn.ms_btn_green {
   background-color: $bg_lighter_green;
   color: $text_dark_violet;
-  transition: all 0.3s ease;
 
   &:hover {
     background-color: $bg_lighter_red;
     color: $text_white;
+  }
+}
+
+.ms_btn.ms_btn_red {
+  background-color: $bg_lighter_red;
+  color: $text_white;
+
+  &:hover {
+    background-color: $bg_darker_red;
   }
 }
