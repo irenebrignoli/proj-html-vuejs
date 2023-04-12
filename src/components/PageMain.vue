@@ -1,12 +1,14 @@
 <script>
 import ConsultantsCard from "../components/ConsultantsCard.vue";
 import Subheading from "./Subheading.vue";
+import CtaGreen from "./CtaGreen.vue";
 
 export default {
   name: "PageMain",
   components: {
     ConsultantsCard,
     Subheading,
+    CtaGreen,
   },
   data() {
     return {
@@ -70,6 +72,9 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- Cta green-->
+    <CtaGreen />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "PageFooter",
+  name: "ConsultantCard",
   props: {
     consultant: Object,
   },
