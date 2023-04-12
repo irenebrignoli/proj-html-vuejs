@@ -36,7 +36,7 @@ export default {
   <section id="consultants">
     <div class="row justify-content-center">
       <div class="col-8">
-        <h5>Our consultants con help you</h5>
+        <h5 class="flex-shrink-0">Our consultants con help you</h5>
         <div class="row flex-wrap justify-content-between gy-5">
           <div v-for="(consultant, i) in consultants" :key="i" class="col-5">
             <ConsultantsCard :consultant="consultant" />
@@ -53,6 +53,7 @@ export default {
 #consultants {
   margin: 5rem 0;
   color: $text_dark_gray;
+  position: relative;
 
   h5 {
     text-transform: uppercase;
@@ -64,8 +65,10 @@ export default {
       content: "";
       background-color: $bg_darker_green;
       height: 2.5px;
-      width: 100%;
+      width: 55%;
       position: absolute;
+      right: 0;
+      top: 1rem;
     }
   }
 }
