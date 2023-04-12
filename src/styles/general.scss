@@ -3,7 +3,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  width: 100%;
 }
 
 .main_nav {
@@ -33,4 +32,8 @@ body {
 .text_section {
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+.row {
+  margin: 0;
 }

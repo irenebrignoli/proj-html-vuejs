@@ -100,7 +100,6 @@ header {
 
   .header_bottom {
     height: 48rem;
-    background-color: red;
   }
 }
 </style>

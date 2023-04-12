@@ -45,6 +45,10 @@ export default {
       </div>
     </div>
   </section>
+
+  <div class="blue_area">
+    <!-- about us section -->
+  </div>
 </template>
 
 <style lang="scss" scoped>
