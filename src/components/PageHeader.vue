@@ -14,6 +14,7 @@ export default {
 
 <template>
   <header>
+    <!-- hedaer top -->
     <div class="header_top">
       <div class="container h-100">
         <div class="h-100 d-flex justify-content-between align-items-center">
@@ -35,6 +36,7 @@ export default {
       </div>
     </div>
 
+    <!-- hedaer bottom-->
     <div class="header_bottom">
       <TheJumbotron />
     </div>
@@ -97,7 +99,7 @@ header {
   }
 
   .header_bottom {
-    height: 50rem;
+    height: 45rem;
     background-color: red;
   }
 }

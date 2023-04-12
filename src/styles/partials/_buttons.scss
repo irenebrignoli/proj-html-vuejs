@@ -1,0 +1,20 @@
+@use "../partials/variables" as *;
+
+.ms_btn {
+  text-transform: uppercase;
+  padding: 0.9rem 2.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.8px;
+  border: none;
+}
+
+.ms_btn.ms_btn_green {
+  background-color: $bg_lighter_green;
+  color: $text_dark_violet;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $bg_lighter_red;
+    color: $text_white;
+  }
+}

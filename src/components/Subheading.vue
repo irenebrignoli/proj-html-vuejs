@@ -21,11 +21,11 @@ export default {
   background-color: $bg_darker_green;
   height: 2.5px;
   width: 40px;
-  margin-bottom: 5px;
 }
 .subheading {
   color: $text_dirty_white;
-  font-size: 0.8rem;
+  line-height: 0.6;
+  font-size: 0.9rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
