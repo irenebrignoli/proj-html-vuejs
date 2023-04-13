@@ -5,6 +5,7 @@ import CtaGreen from "./CtaGreen.vue";
 import ProjectCard from "./PorjectCard.vue";
 import SubheadingVariant from "./SubheadingVariant.vue";
 import TestimonialCard from "./TestimonialCard.vue";
+import BlogCard from "./BlogCard.vue";
 
 export default {
   name: "PageMain",
@@ -15,6 +16,7 @@ export default {
     CtaGreen,
     ProjectCard,
     TestimonialCard,
+    BlogCard,
   },
   data() {
     return {
@@ -68,6 +70,22 @@ export default {
           image: "t3",
           name: "Pablo Escobar",
           hover: false,
+        },
+      ],
+      blogs: [
+        {
+          image: "blog1",
+          date: "july 4, 2019",
+          writer: "paul",
+          title: "Canadian Consulting Firm acquired by UK Giant",
+          text: "When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a",
+        },
+        {
+          image: "blog2",
+          date: "april 10, 2022",
+          writer: "jennifer",
+          title: "Italins acquire UK Giant",
+          text: "When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a",
         },
       ],
     };
@@ -157,11 +175,34 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- blog section -->
+    <section id="blog">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <Subheading subtitle="Blog" />
+            <h3 class="main_title_repeat">The Recent news you must read it</h3>
+          </div>
+          <button class="ms_btn ms_btn_green">View all</button>
+        </div>
+
+        <div class="row mt-5 gap-4">
+          <div v-for="(blog, i) in blogs" :key="i" class="col">
+            <BlogCard :blog="blog" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boh -->
+    <section id="boh"></section>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/buttons" as *;
 
 #consultants {
   margin: 5rem 0;
@@ -236,6 +277,18 @@ export default {
         padding: 0;
       }
     }
+  }
+
+  #blog {
+    margin: 10rem 0;
+
+    .col {
+      padding: 0;
+    }
+  }
+
+  #boh {
+    height: 60rem;
   }
 }
 </style>
