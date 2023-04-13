@@ -12,7 +12,7 @@ export default {
   <div class="jumbotron h-100">
     <div class="row h-100">
       <!-- blue col -->
-      <div class="blue_col col-4 h-100"></div>
+      <div class="blue_col col-4 h-100 bg_png"></div>
 
       <!-- red col -->
       <div class="red_img_col col-8"></div>

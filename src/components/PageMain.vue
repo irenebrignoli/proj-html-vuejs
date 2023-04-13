@@ -111,7 +111,7 @@ export default {
   </section>
 
   <!-- BACKGROUND BLUE -->
-  <div class="blue_area">
+  <div class="blue_area bg_png">
     <!-- about us section -->
     <section id="about_us">
       <div class="row h-100">
