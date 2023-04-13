@@ -21,7 +21,7 @@ export default {
 <template>
   <PageHeader :links="navLinks" />
   <PageMain />
-  <PageFooter />
+  <PageFooter :links="navLinks" />
 </template>
 
 <style lang="scss">

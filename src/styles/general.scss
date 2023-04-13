@@ -3,6 +3,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 .main_nav {
@@ -49,4 +50,23 @@ body {
 
 .row {
   margin: 0;
+}
+
+.arrow_up,
+.chat {
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+}
+
+.chat {
+  background-color: $bg_chat;
+  height: 3rem;
+  width: 3rem;
+  right: 1rem;
+  bottom: 1rem;
+  line-height: 3rem;
+  color: $text_white;
+  font-size: 1.2rem;
 }
