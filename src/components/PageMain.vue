@@ -3,14 +3,18 @@ import ConsultantsCard from "../components/ConsultantsCard.vue";
 import Subheading from "./Subheading.vue";
 import CtaGreen from "./CtaGreen.vue";
 import ProjectCard from "./PorjectCard.vue";
+import SubheadingVariant from "./SubheadingVariant.vue";
+import TestimonialCard from "./TestimonialCard.vue";
 
 export default {
   name: "PageMain",
   components: {
     ConsultantsCard,
     Subheading,
+    SubheadingVariant,
     CtaGreen,
     ProjectCard,
+    TestimonialCard,
   },
   data() {
     return {
@@ -46,6 +50,23 @@ export default {
         {
           image: "p3",
           title: "Vizeon",
+          hover: false,
+        },
+      ],
+      testimonials: [
+        {
+          image: "t1",
+          name: "Vera Duncan",
+          hover: false,
+        },
+        {
+          image: "t2",
+          name: "Tom British",
+          hover: false,
+        },
+        {
+          image: "t3",
+          name: "Pablo Escobar",
           hover: false,
         },
       ],
@@ -119,6 +140,23 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- testimonial section -->
+    <section id="testimonial">
+      <div class="container">
+        <SubheadingVariant subtitle="Testimonial" />
+        <h3 class="main_title_repeat text-end">
+          What's the customer say<br />about our work
+        </h3>
+      </div>
+      <div class="d-flex justify-content-end">
+        <div class="customers row mt-5">
+          <div v-for="(testimonial, i) in testimonials" :key="i" class="col">
+            <TestimonialCard :testimonial="testimonial" />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -183,6 +221,19 @@ export default {
         color: $text_dirty_white;
         font-size: 0.8rem;
         line-height: 3rem;
+      }
+    }
+  }
+
+  #testimonial {
+    margin-top: 10rem;
+    .customers {
+      height: 18rem;
+      background-color: $bg_white;
+      width: 90%;
+
+      .col {
+        padding: 0;
       }
     }
   }

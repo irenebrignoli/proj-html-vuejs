@@ -21,7 +21,11 @@ export default {
     @mouseover="project.hover = true"
     @mouseleave="project.hover = false"
   >
-    <img :src="getImageUrl(project.image)" alt="" class="img-fluid" />
+    <img
+      :src="getImageUrl(project.image)"
+      alt="project.name"
+      class="img-fluid"
+    />
     <div
       v-if="project.hover == true"
       class="hover d-flex p-3 align-items-end justify-content-between"
