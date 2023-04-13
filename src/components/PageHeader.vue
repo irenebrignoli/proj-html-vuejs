@@ -28,7 +28,7 @@ export default {
           <nav class="main_nav h-100">
             <ul class="d-flex gap-4 mb-0 h-100">
               <li v-for="link in links" class="h-100">
-                <a href="#">{{ link }}</a>
+                <a :href="`#${link}`">{{ link }}</a>
               </li>
             </ul>
           </nav>

@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      navLinks: ["Home", "About", "Projects", "Services", "Blog", "Contact"],
+      navLinks: ["home", "about", "projects", "services", "blog", "contact"],
     };
   },
 };
