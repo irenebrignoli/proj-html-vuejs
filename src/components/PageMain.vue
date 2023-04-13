@@ -6,6 +6,7 @@ import ProjectCard from "./PorjectCard.vue";
 import SubheadingVariant from "./SubheadingVariant.vue";
 import TestimonialCard from "./TestimonialCard.vue";
 import BlogCard from "./BlogCard.vue";
+import CtaRed from "./CtaRed.vue";
 
 export default {
   name: "PageMain",
@@ -17,6 +18,7 @@ export default {
     ProjectCard,
     TestimonialCard,
     BlogCard,
+    CtaRed,
   },
   data() {
     return {
@@ -195,8 +197,8 @@ export default {
       </div>
     </section>
 
-    <!-- boh -->
-    <section id="boh"></section>
+    <!-- cta red -->
+    <CtaRed />
   </div>
 </template>
 
@@ -280,15 +282,11 @@ export default {
   }
 
   #blog {
-    margin: 10rem 0;
+    margin: 10rem 0 18rem 0;
 
     .col {
       padding: 0;
     }
-  }
-
-  #boh {
-    height: 60rem;
   }
 }
 </style>

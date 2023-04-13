@@ -27,3 +27,12 @@
     background-color: $bg_darker_red;
   }
 }
+
+.ms_btn.ms_btn_blue {
+  background-color: $bg_darkblue;
+  color: $text_white;
+
+  &:hover {
+    background-color: lighten($color: $bg_darkblue, $amount: 20%);
+  }
+}
